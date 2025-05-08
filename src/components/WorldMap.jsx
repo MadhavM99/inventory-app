@@ -1,28 +1,42 @@
-// WorldMap.jsx
-import React, { useState } from 'react';
-import Map, { Marker, Popup, NavigationControl } from 'react-map-gl/maplibre';
-import 'maplibre-gl/dist/maplibre-gl.css';
-import { motion } from 'framer-motion';
-import { Home } from 'lucide-react';
-
-const cities = [
-  { name: 'New York', forecast: '45.7M', percentage: '65%', trend: 'up', coords: [-74.006, 40.7128] },
-  { name: 'Paris', forecast: '79.2T', percentage: '62%', trend: 'down', coords: [2.3522, 48.8566] },
-  { name: 'Tokyo', forecast: '567.5M', percentage: '56%', trend: 'up', coords: [139.6917, 35.6895] },
-  { name: 'Sydney', forecast: '567.9M', percentage: '23%', trend: 'down', coords: [151.2093, -33.8688] },
-  { name: 'London', forecast: '$23.5T', percentage: '85%', trend: 'up', coords: [-0.1276, 51.5074] },
-  { name: 'Moscow', forecast: '814.1M', percentage: '39%', trend: 'down', coords: [37.6173, 55.7558] },
-];
+import React, { useState, useEffect } from "react";
+import Map, { Marker, Popup, NavigationControl } from "react-map-gl/maplibre";
+import "maplibre-gl/dist/maplibre-gl.css";
+import { motion } from "framer-motion";
+import { Home } from "lucide-react";
 
 const WorldMap = () => {
+  const [cities, setCities] = useState([]);
   const [selectedCity, setSelectedCity] = useState(null);
+
+  useEffect(() => {
+    fetch("/data/cities.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        if (data && data.cities) {
+          setCities(data.cities);
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching cities data:", error);
+      });
+  }, []);
 
   return (
     <motion.div
       className="absolute inset-0 z-0"
       initial={{ scale: 1.2, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
-      transition={{ duration: 0.8, ease: 'easeOut' }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <Map
         initialViewState={{
@@ -30,13 +44,16 @@ const WorldMap = () => {
           latitude: 20,
           zoom: 2.8,
         }}
-        style={{ width: '100%', height: '100%' }}
-        mapStyle="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
+        style={{ width: "100%", height: "100%" }}
+        mapStyle="/data/mapStyle.json"
         attributionControl={false}
       >
-        <NavigationControl position="top-left" />
         {cities.map((city, idx) => (
-          <Marker key={idx} longitude={city.coords[0]} latitude={city.coords[1]}>
+          <Marker
+            key={city.cityId || idx}
+            longitude={city.coords[0]}
+            latitude={city.coords[1]}
+          >
             <div
               onMouseOver={() => setSelectedCity(city)}
               onMouseLeave={() => setSelectedCity(null)}
@@ -56,9 +73,11 @@ const WorldMap = () => {
           >
             <div className="text-sm text-black bg-white/10 backdrop-blur-lg p-2 rounded-lg">
               <div className="font-bold">{selectedCity.name}</div>
-              <div>Forecast: {selectedCity.forecast}</div>
-              <div>Trend: {selectedCity.trend}</div>
-              <div>Engagement: {selectedCity.percentage}</div>
+              <div>Forecast: {selectedCity.forecast.toLocaleString()}</div>
+              <div>
+                Trend: {selectedCity["forecast-trend"] || selectedCity.trend}
+              </div>
+              <div>Engagement: {selectedCity.percentage}%</div>
             </div>
           </Popup>
         )}

@@ -1,0 +1,179 @@
+{
+  "cities": [
+    {
+      "name": "New Delhi",
+      "cityId": "NDL001",
+      "coords": [77.216721, 28.6448],
+      "percentage": 83,
+      "forecast": 630000,
+      "forecast-trend": "up",
+      "percentage-trend": "up",
+      "forcast-chart": [
+        { "value": 1 },
+        { "value": 42 },
+        { "value": 27 },
+        { "value": 6 },
+        { "value": 38 },
+        { "value": 8 }
+      ],
+      "percentage-chart": [
+        { "value": 25 },
+        { "value": 8 },
+        { "value": 33 },
+        { "value": 7 },
+        { "value": 85 },
+        { "value": 5 }
+      ]
+    },
+    {
+      "name": "Riyadh",
+      "cityId": "CPT001",
+      "coords": [46.675, 24.7136],
+      "percentage": 80,
+      "forecast": 600000,
+      "forecast-trend": "up",
+      "percentage-trend": "up",
+      "forcast-chart": [
+        { "value": 14 },
+        { "value": 3 },
+        { "value": 5 },
+        { "value": 2 },
+        { "value": 33 },
+        { "value": 80 }
+      ],
+      "percentage-chart": [
+        { "value": 2 },
+        { "value": 5 },
+        { "value": 2 },
+        { "value": 68 },
+        { "value": 82 },
+        { "value": 40 }
+      ]
+    },
+    {
+      "name": "New York",
+      "cityId": "NYC001",
+      "coords": [-74.006, 40.7128],
+      "percentage": 84,
+      "forecast": 620000,
+      "forecast-trend": "up",
+      "percentage-trend": "down",
+      "forcast-chart": [
+        { "value": 10 },
+        { "value": 40 },
+        { "value": 20 },
+        { "value": 6 },
+        { "value": 3 },
+        { "value": 8 }
+      ],
+      "percentage-chart": [
+        { "value": 20 },
+        { "value": 1 },
+        { "value": 30 },
+        { "value": 7 },
+        { "value": 8 },
+        { "value": 40 }
+      ]
+    },
+    {
+      "name": "Paris",
+      "cityId": "PAR001",
+      "coords": [2.3522, 48.8566],
+      "percentage": 81,
+      "forecast": 605000,
+      "forecast-trend": "up",
+      "percentage-trend": "up",
+      "forcast-chart": [
+        { "value": 15 },
+        { "value": 3 },
+        { "value": 2 },
+        { "value": 8 },
+        { "value": 3 },
+        { "value": 77 }
+      ],
+      "percentage-chart": [
+        { "value": 1 },
+        { "value": 4 },
+        { "value": 8 },
+        { "value": 65 },
+        { "value": 78 },
+        { "value": 39 }
+      ]
+    },
+    {
+      "name": "Rabat",
+      "cityId": "RAB001",
+      "coords": [-6.020882, 34.84165],
+      "percentage": 78,
+      "forecast": 590000,
+      "forecast-trend": "up",
+      "percentage-trend": "down",
+      "forcast-chart": [
+        { "value": 14 },
+        { "value": 4 },
+        { "value": 22 },
+        { "value": 6 },
+        { "value": 3 },
+        { "value": 78 }
+      ],
+      "percentage-chart": [
+        { "value": 2 },
+        { "value": 15 },
+        { "value": 2 },
+        { "value": 6 },
+        { "value": 75 },
+        { "value": 38 }
+      ]
+    },
+    {
+      "name": "Rio de Janeiro",
+      "cityId": "RIO001",
+      "coords": [-43.196388, -12.908333],
+      "percentage": 79,
+      "forecast": 610000,
+      "forecast-trend": "up",
+      "percentage-trend": "up",
+      "forcast-chart": [
+        { "value": 1 },
+        { "value": 3 },
+        { "value": 4 },
+        { "value": 6 },
+        { "value": 32 },
+        { "value": 79 }
+      ],
+      "percentage-chart": [
+        { "value": 21 },
+        { "value": 16 },
+        { "value": 30 },
+        { "value": 6 },
+        { "value": 8 },
+        { "value": 4 }
+      ]
+    },
+    {
+      "name": "Sydney",
+      "cityId": "SYD001",
+      "coords": [151.2093, -33.8688],
+      "percentage": 82,
+      "forecast": 610000,
+      "forecast-trend": "up",
+      "percentage-trend": "up",
+      "forcast-chart": [
+        { "value": 12 },
+        { "value": 38 },
+        { "value": 25 },
+        { "value": 6 },
+        { "value": 3 },
+        { "value": 8 }
+      ],
+      "percentage-chart": [
+        { "value": 22 },
+        { "value": 1 },
+        { "value": 3 },
+        { "value": 6 },
+        { "value": 82 },
+        { "value": 42 }
+      ]
+    }
+  ]
+}

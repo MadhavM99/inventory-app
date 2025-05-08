@@ -1,0 +1,357 @@
+{
+  "name": "Rio de Janeiro",
+  "cityId": "RIO001",
+  "coords": [-43.196388, -22.908333],
+  "percentage": 79,
+  "forecast": 610000,
+  "forecast-trend": "up",
+  "percentage-trend": "up",
+  "forcast-chart": [
+    { "value": 13 },
+    { "value": 37 },
+    { "value": 24 },
+    { "value": 60 },
+    { "value": 32 },
+    { "value": 79 }
+  ],
+  "percentage-chart": [
+    { "value": 21 },
+    { "value": 16 },
+    { "value": 30 },
+    { "value": 67 },
+    { "value": 81 },
+    { "value": 41 }
+  ],
+  "stacks": [
+    {
+      "stackId": "RIO-1001",
+      "stackName": "Copacabana Stack",
+      "stackStatus": "BACKLOG",
+      "aiforecast": {
+        "percentage": 85,
+        "quarters": [
+          { "quarter": "Q3-2023", "value": 670000 },
+          { "quarter": "Q4-2023", "value": 630000 },
+          { "quarter": "Q1-2024", "value": 660000 },
+          { "quarter": "Q2-2024", "value": 715000 },
+          { "quarter": "Q3-2024", "value": 650000 },
+          { "quarter": "Q4-2024", "value": 620000 },
+          { "quarter": "Q1-2025", "value": 650000 },
+          { "quarter": "Q2-2025", "value": 655000 },
+          { "quarter": "Q3-2025", "value": 695000 },
+          { "quarter": "Q4-2025", "value": 690000 },
+          { "quarter": "Q1-2026", "value": 705000 },
+          { "quarter": "Q2-2026", "value": 710000 }
+        ]
+      },
+      "consumption": {
+        "quarters": [
+          { "quarter": "Q3-2023", "value": 650000 },
+          { "quarter": "Q4-2023", "value": 610000 },
+          { "quarter": "Q1-2024", "value": 590000 },
+          { "quarter": "Q2-2024", "value": 570000 },
+          { "quarter": "Q3-2024", "value": 550000 },
+          { "quarter": "Q4-2024", "value": 565000 },
+          { "quarter": "Q1-2025", "value": 580000 },
+          { "quarter": "Q2-2025", "value": 595000 },
+          { "quarter": "Q3-2025", "value": 610000 },
+          { "quarter": "Q4-2025", "value": 625000 },
+          { "quarter": "Q1-2026", "value": 640000 },
+          { "quarter": "Q2-2026", "value": 655000 }
+        ]
+      },
+      "finalforecast": {
+        "percentage": 77,
+        "quarters": [
+          { "quarter": "Q3-2023", "value": 570000 },
+          { "quarter": "Q4-2023", "value": 540000 },
+          { "quarter": "Q1-2024", "value": 550000 },
+          { "quarter": "Q2-2024", "value": 400000 },
+          { "quarter": "Q3-2024", "value": 445000 },
+          { "quarter": "Q4-2024", "value": 520000 },
+          { "quarter": "Q1-2025", "value": 460000 },
+          { "quarter": "Q2-2025", "value": 485000 },
+          { "quarter": "Q3-2025", "value": 495000 },
+          { "quarter": "Q4-2025", "value": 530000 },
+          { "quarter": "Q1-2026", "value": 540000 },
+          { "quarter": "Q2-2026", "value": 555000 }
+        ]
+      }
+    },
+    {
+      "stackId": "RIO-1002",
+      "stackName": "Tijuca Stack",
+      "stackStatus": "BACKLOG",
+      "aiforecast": {
+        "percentage": 83,
+        "quarters": [
+          { "quarter": "Q3-2023", "value": 660000 },
+          { "quarter": "Q4-2023", "value": 620000 },
+          { "quarter": "Q1-2024", "value": 645000 },
+          { "quarter": "Q2-2024", "value": 700000 },
+          { "quarter": "Q3-2024", "value": 635000 },
+          { "quarter": "Q4-2024", "value": 610000 },
+          { "quarter": "Q1-2025", "value": 640000 },
+          { "quarter": "Q2-2025", "value": 645000 },
+          { "quarter": "Q3-2025", "value": 685000 },
+          { "quarter": "Q4-2025", "value": 680000 },
+          { "quarter": "Q1-2026", "value": 695000 },
+          { "quarter": "Q2-2026", "value": 700000 }
+        ]
+      },
+      "consumption": {
+        "quarters": [
+          { "quarter": "Q3-2023", "value": 640000 },
+          { "quarter": "Q4-2023", "value": 600000 },
+          { "quarter": "Q1-2024", "value": 580000 },
+          { "quarter": "Q2-2024", "value": 560000 },
+          { "quarter": "Q3-2024", "value": 540000 },
+          { "quarter": "Q4-2024", "value": 555000 },
+          { "quarter": "Q1-2025", "value": 570000 },
+          { "quarter": "Q2-2025", "value": 585000 },
+          { "quarter": "Q3-2025", "value": 600000 },
+          { "quarter": "Q4-2025", "value": 615000 },
+          { "quarter": "Q1-2026", "value": 630000 },
+          { "quarter": "Q2-2026", "value": 645000 }
+        ]
+      },
+      "finalforecast": {
+        "percentage": 74,
+        "quarters": [
+          { "quarter": "Q3-2023", "value": 560000 },
+          { "quarter": "Q4-2023", "value": 530000 },
+          { "quarter": "Q1-2024", "value": 540000 },
+          { "quarter": "Q2-2024", "value": 390000 },
+          { "quarter": "Q3-2024", "value": 435000 },
+          { "quarter": "Q4-2024", "value": 510000 },
+          { "quarter": "Q1-2025", "value": 450000 },
+          { "quarter": "Q2-2025", "value": 475000 },
+          { "quarter": "Q3-2025", "value": 485000 },
+          { "quarter": "Q4-2025", "value": 520000 },
+          { "quarter": "Q1-2026", "value": 530000 },
+          { "quarter": "Q2-2026", "value": 545000 }
+        ]
+      }
+    },
+    {
+      "stackId": "RIO-1003",
+      "stackName": "Barra da Tijuca Stack",
+      "stackStatus": "BACKLOG",
+      "aiforecast": {
+        "percentage": 84,
+        "quarters": [
+          { "quarter": "Q3-2023", "value": 675000 },
+          { "quarter": "Q4-2023", "value": 635000 },
+          { "quarter": "Q1-2024", "value": 660000 },
+          { "quarter": "Q2-2024", "value": 715000 },
+          { "quarter": "Q3-2024", "value": 645000 },
+          { "quarter": "Q4-2024", "value": 620000 },
+          { "quarter": "Q1-2025", "value": 650000 },
+          { "quarter": "Q2-2025", "value": 655000 },
+          { "quarter": "Q3-2025", "value": 695000 },
+          { "quarter": "Q4-2025", "value": 690000 },
+          { "quarter": "Q1-2026", "value": 705000 },
+          { "quarter": "Q2-2026", "value": 710000 }
+        ]
+      },
+      "consumption": {
+        "quarters": [
+          { "quarter": "Q3-2023", "value": 655000 },
+          { "quarter": "Q4-2023", "value": 615000 },
+          { "quarter": "Q1-2024", "value": 595000 },
+          { "quarter": "Q2-2024", "value": 575000 },
+          { "quarter": "Q3-2024", "value": 555000 },
+          { "quarter": "Q4-2024", "value": 570000 },
+          { "quarter": "Q1-2025", "value": 585000 },
+          { "quarter": "Q2-2025", "value": 600000 },
+          { "quarter": "Q3-2025", "value": 615000 },
+          { "quarter": "Q4-2025", "value": 630000 },
+          { "quarter": "Q1-2026", "value": 645000 },
+          { "quarter": "Q2-2026", "value": 660000 }
+        ]
+      },
+      "finalforecast": {
+        "percentage": 76,
+        "quarters": [
+          { "quarter": "Q3-2023", "value": 590000 },
+          { "quarter": "Q4-2023", "value": 560000 },
+          { "quarter": "Q1-2024", "value": 570000 },
+          { "quarter": "Q2-2024", "value": 410000 },
+          { "quarter": "Q3-2024", "value": 455000 },
+          { "quarter": "Q4-2024", "value": 535000 },
+          { "quarter": "Q1-2025", "value": 475000 },
+          { "quarter": "Q2-2025", "value": 500000 },
+          { "quarter": "Q3-2025", "value": 510000 },
+          { "quarter": "Q4-2025", "value": 545000 },
+          { "quarter": "Q1-2026", "value": 555000 },
+          { "quarter": "Q2-2026", "value": 570000 }
+        ]
+      }
+    },
+    {
+      "stackId": "RIO-1004",
+      "stackName": "Santa Teresa Stack",
+      "stackStatus": "BACKLOG",
+      "aiforecast": {
+        "percentage": 82,
+        "quarters": [
+          { "quarter": "Q3-2023", "value": 660000 },
+          { "quarter": "Q4-2023", "value": 620000 },
+          { "quarter": "Q1-2024", "value": 645000 },
+          { "quarter": "Q2-2024", "value": 700000 },
+          { "quarter": "Q3-2024", "value": 635000 },
+          { "quarter": "Q4-2024", "value": 610000 },
+          { "quarter": "Q1-2025", "value": 640000 },
+          { "quarter": "Q2-2025", "value": 645000 },
+          { "quarter": "Q3-2025", "value": 685000 },
+          { "quarter": "Q4-2025", "value": 680000 },
+          { "quarter": "Q1-2026", "value": 695000 },
+          { "quarter": "Q2-2026", "value": 700000 }
+        ]
+      },
+      "consumption": {
+        "quarters": [
+          { "quarter": "Q3-2023", "value": 640000 },
+          { "quarter": "Q4-2023", "value": 600000 },
+          { "quarter": "Q1-2024", "value": 580000 },
+          { "quarter": "Q2-2024", "value": 560000 },
+          { "quarter": "Q3-2024", "value": 540000 },
+          { "quarter": "Q4-2024", "value": 555000 },
+          { "quarter": "Q1-2025", "value": 570000 },
+          { "quarter": "Q2-2025", "value": 585000 },
+          { "quarter": "Q3-2025", "value": 600000 },
+          { "quarter": "Q4-2025", "value": 615000 },
+          { "quarter": "Q1-2026", "value": 630000 },
+          { "quarter": "Q2-2026", "value": 645000 }
+        ]
+      },
+      "finalforecast": {
+        "percentage": 75,
+        "quarters": [
+          { "quarter": "Q3-2023", "value": 570000 },
+          { "quarter": "Q4-2023", "value": 540000 },
+          { "quarter": "Q1-2024", "value": 550000 },
+          { "quarter": "Q2-2024", "value": 400000 },
+          { "quarter": "Q3-2024", "value": 445000 },
+          { "quarter": "Q4-2024", "value": 520000 },
+          { "quarter": "Q1-2025", "value": 460000 },
+          { "quarter": "Q2-2025", "value": 485000 },
+          { "quarter": "Q3-2025", "value": 495000 },
+          { "quarter": "Q4-2025", "value": 530000 },
+          { "quarter": "Q1-2026", "value": 540000 },
+          { "quarter": "Q2-2026", "value": 555000 }
+        ]
+      }
+    },
+    {
+      "stackId": "RIO-1005",
+      "stackName": "Lapa Stack",
+      "stackStatus": "BACKLOG",
+      "aiforecast": {
+        "percentage": 81,
+        "quarters": [
+          { "quarter": "Q3-2023", "value": 655000 },
+          { "quarter": "Q4-2023", "value": 615000 },
+          { "quarter": "Q1-2024", "value": 640000 },
+          { "quarter": "Q2-2024", "value": 695000 },
+          { "quarter": "Q3-2024", "value": 630000 },
+          { "quarter": "Q4-2024", "value": 605000 },
+          { "quarter": "Q1-2025", "value": 635000 },
+          { "quarter": "Q2-2025", "value": 640000 },
+          { "quarter": "Q3-2025", "value": 680000 },
+          { "quarter": "Q4-2025", "value": 675000 },
+          { "quarter": "Q1-2026", "value": 690000 },
+          { "quarter": "Q2-2026", "value": 695000 }
+        ]
+      },
+      "consumption": {
+        "quarters": [
+          { "quarter": "Q3-2023", "value": 635000 },
+          { "quarter": "Q4-2023", "value": 595000 },
+          { "quarter": "Q1-2024", "value": 575000 },
+          { "quarter": "Q2-2024", "value": 555000 },
+          { "quarter": "Q3-2024", "value": 535000 },
+          { "quarter": "Q4-2024", "value": 550000 },
+          { "quarter": "Q1-2025", "value": 565000 },
+          { "quarter": "Q2-2025", "value": 580000 },
+          { "quarter": "Q3-2025", "value": 595000 },
+          { "quarter": "Q4-2025", "value": 610000 },
+          { "quarter": "Q1-2026", "value": 625000 },
+          { "quarter": "Q2-2026", "value": 640000 }
+        ]
+      },
+      "finalforecast": {
+        "percentage": 74,
+        "quarters": [
+          { "quarter": "Q3-2023", "value": 565000 },
+          { "quarter": "Q4-2023", "value": 535000 },
+          { "quarter": "Q1-2024", "value": 545000 },
+          { "quarter": "Q2-2024", "value": 395000 },
+          { "quarter": "Q3-2024", "value": 440000 },
+          { "quarter": "Q4-2024", "value": 515000 },
+          { "quarter": "Q1-2025", "value": 455000 },
+          { "quarter": "Q2-2025", "value": 480000 },
+          { "quarter": "Q3-2025", "value": 490000 },
+          { "quarter": "Q4-2025", "value": 525000 },
+          { "quarter": "Q1-2026", "value": 535000 },
+          { "quarter": "Q2-2026", "value": 550000 }
+        ]
+      }
+    },
+    {
+      "stackId": "RIO-1006",
+      "stackName": "Botafogo Stack",
+      "stackStatus": "BACKLOG",
+      "aiforecast": {
+        "percentage": 80,
+        "quarters": [
+          { "quarter": "Q3-2023", "value": 650000 },
+          { "quarter": "Q4-2023", "value": 610000 },
+          { "quarter": "Q1-2024", "value": 635000 },
+          { "quarter": "Q2-2024", "value": 690000 },
+          { "quarter": "Q3-2024", "value": 625000 },
+          { "quarter": "Q4-2024", "value": 600000 },
+          { "quarter": "Q1-2025", "value": 630000 },
+          { "quarter": "Q2-2025", "value": 635000 },
+          { "quarter": "Q3-2025", "value": 675000 },
+          { "quarter": "Q4-2025", "value": 670000 },
+          { "quarter": "Q1-2026", "value": 685000 },
+          { "quarter": "Q2-2026", "value": 690000 }
+        ]
+      },
+      "consumption": {
+        "quarters": [
+          { "quarter": "Q3-2023", "value": 630000 },
+          { "quarter": "Q4-2023", "value": 590000 },
+          { "quarter": "Q1-2024", "value": 570000 },
+          { "quarter": "Q2-2024", "value": 550000 },
+          { "quarter": "Q3-2024", "value": 530000 },
+          { "quarter": "Q4-2024", "value": 545000 },
+          { "quarter": "Q1-2025", "value": 560000 },
+          { "quarter": "Q2-2025", "value": 575000 },
+          { "quarter": "Q3-2025", "value": 590000 },
+          { "quarter": "Q4-2025", "value": 605000 },
+          { "quarter": "Q1-2026", "value": 620000 },
+          { "quarter": "Q2-2026", "value": 635000 }
+        ]
+      },
+      "finalforecast": {
+        "percentage": 73,
+        "quarters": [
+          { "quarter": "Q3-2023", "value": 555000 },
+          { "quarter": "Q4-2023", "value": 525000 },
+          { "quarter": "Q1-2024", "value": 535000 },
+          { "quarter": "Q2-2024", "value": 385000 },
+          { "quarter": "Q3-2024", "value": 430000 },
+          { "quarter": "Q4-2024", "value": 505000 },
+          { "quarter": "Q1-2025", "value": 445000 },
+          { "quarter": "Q2-2025", "value": 470000 },
+          { "quarter": "Q3-2025", "value": 480000 },
+          { "quarter": "Q4-2025", "value": 515000 },
+          { "quarter": "Q1-2026", "value": 525000 },
+          { "quarter": "Q2-2026", "value": 540000 }
+        ]
+      }
+    }
+  ]
+}
