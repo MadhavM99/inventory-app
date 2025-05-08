@@ -1,60 +1,10 @@
-// components/Sidebar.jsx
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
-const StatusTabs = ({ selectedStatus, setSelectedStatus }) => (
-  <div className="flex border-b border-gray-800">
-    {["BACKLOG", "PENDING", "FINAL_SIGNOFF"].map((status) => (
-      <button
-        key={status}
-        onClick={() => setSelectedStatus(status)}
-        className={`flex-1 py-3 text-sm font-medium ${
-          selectedStatus === status
-            ? "border-b-2 border-blue-500 text-blue-500"
-            : "text-gray-400 hover:text-blue-400"
-        }`}
-      >
-        {status.replace("_", " ")}
-      </button>
-    ))}
-  </div>
-);
-
-const StackItem = ({ stack, isSelected, onClick }) => (
-  <div
-    onClick={() => onClick(stack)}
-    className={`p-3 mb-2 rounded-md cursor-pointer transition-all ${
-      isSelected
-        ? "bg-gray-800 border-2 border-blue-500"
-        : "hover:bg-gray-800 border-2 border-transparent"
-    }`}
-  >
-    <div className="font-medium truncate">{stack.stackName}</div>
-    <div className="flex gap-2 mt-2">
-      <span className="text-xs px-2 py-1 bg-green-600 rounded">
-        AI: {stack.aiforecast.percentage}%
-      </span>
-      <span className="text-xs px-2 py-1 bg-yellow-600 rounded">
-        Final: {stack.finalforecast.percentage}%
-      </span>
-    </div>
-  </div>
-);
-
-const StackList = ({ stacks, selectedStackId, onStackSelect }) => (
-  <div className="flex-1 overflow-y-auto p-2">
-    {stacks.map((stack) => (
-      <StackItem
-        key={stack.stackId}
-        stack={stack}
-        isSelected={stack.stackId === selectedStackId}
-        onClick={onStackSelect}
-      />
-    ))}
-  </div>
-);
+import StackItem from "./StackItem";
+import StatusTabs from "./StatusTabs";
+import StackList from "./StackList";
 
 const Sidebar = ({ onStackSelect }) => {
   const { city } = useParams();
@@ -71,12 +21,18 @@ const Sidebar = ({ onStackSelect }) => {
         if (!response.ok) throw new Error("City data not found");
         const data = await response.json();
         setCityData(data);
+
+        if (data != null) {
+          setSelectedStackId(data?.stacks[0]?.stackId);
+          onStackSelect(data?.stacks[0]);
+        }
       } catch (error) {
         console.error("Error loading city data:", error);
         navigate("/");
       }
     };
     fetchCityData();
+
   }, [city, navigate]);
 
   const filteredStacks =
@@ -84,24 +40,49 @@ const Sidebar = ({ onStackSelect }) => {
 
   return (
     <div
-      className={`bg-black h-full flex flex-col border-r border-gray-800 transition-all duration-300 ${
-        collapsed ? "w-12" : "w-[30vw]"
-      }`}
+      className={`bg-[#193D4D] h-full flex flex-col border-r border-gray-800 transition-all duration-300 ${collapsed ? "w-12" : "w-[25vw]"
+        }`}
     >
-      <div className="p-2 border-b border-gray-800 flex justify-end">
-        <Button
-          variant="ghost"
-          size="sm"
-          className="h-8 w-8 p-0 hover:bg-gray-800"
-          onClick={() => setCollapsed(!collapsed)}
-        >
-          {collapsed ? (
-            <ChevronRight className="h-4 w-4 text-white" />
-          ) : (
-            <ChevronLeft className="h-4 w-4 text-white" />
-          )}
-        </Button>
-      </div>
+      <div className={`flex flex-col items-start px-4 py-2 ${collapsed ?'invisible' :''}`}>
+  { (
+    <>
+      <Button
+        variant="ghost"
+        size="sm"
+        className="h-8 p-0 mb-2 hover:bg-gray-800"
+        
+        onClick={() => navigate("/")}
+      >
+        <ChevronLeft className="h-4 w-4 text-[#66FFE1]" />
+      </Button>
+
+      <span className="text-lg text-[#66FFE1] font-semibold">
+        Sample Stack
+      </span>
+    </>
+  )}
+</div>
+
+
+
+      <div className="relative border-b border-gray-800">
+  <div className="p-2 flex justify-end">
+    {/* Empty spacer to maintain structure if needed */}
+  </div>
+  <Button
+    variant="ghost"
+    size="sm"
+    className="absolute top-2 -right-4 h-8 w-8 p-0 hover:bg-gray-800 bg-[#193D4D] border border-gray-700 rounded-full z-10"
+    onClick={() => setCollapsed(!collapsed)}
+  >
+    {collapsed ? (
+      <ChevronRight className="h-4 w-4 text-[#66FFE1]" />
+    ) : (
+      <ChevronLeft className="h-4 w-4 text-[#66FFE1]" />
+    )}
+  </Button>
+</div>
+
 
       {!collapsed && (
         <>

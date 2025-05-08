@@ -58,16 +58,16 @@ const StackChart = ({ stack }) => {
   });
 
   return (
-    <div className="bg-black p-6 rounded-lg border border-gray-800">
+    <div className="bg-gray-800 p-6 rounded-lg border border-gray-800">
       <ChartHeader
         showConfidenceInterval={showConfidenceInterval}
         setShowConfidenceInterval={setShowConfidenceInterval}
       />
       <div className="grid grid-cols-2 mt-4 border-b border-gray-700">
-        <div className="text-center py-2">
+        <div className="text-center py-2 text-sm">
           <span className="text-gray-300 font-medium">HISTORICAL</span>
         </div>
-        <div className="text-center py-2 border-teal-500">
+        <div className="text-center py-2 border-teal-500 text-sm">
           <span className="text-teal-500 font-medium">FORECAST</span>
         </div>
       </div>

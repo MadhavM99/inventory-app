@@ -22,7 +22,7 @@ const ForecastLineChart = ({
   };
 
   return (
-    <div style={{ height: "400px", width: "100%" }}>
+    <div style={{ height: "230px", width: "100%" }}>
       <ResponsiveContainer>
         <LineChart
           data={chartData}
@@ -34,7 +34,7 @@ const ForecastLineChart = ({
             tick={{ fill: "#aaa", fontSize: 10 }}
             tickFormatter={formatQuarter}
             interval={0}
-            height={60}
+            height={10}
           />
           <YAxis
             domain={[0, 900]}

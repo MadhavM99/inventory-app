@@ -1,4 +1,3 @@
-// components/sidebar/StackItem.jsx
 import React from "react";
 
 const StackItem = ({ stack, isSelected, onClick }) => {
@@ -8,19 +7,19 @@ const StackItem = ({ stack, isSelected, onClick }) => {
       className={`p-3 mb-2 rounded-md cursor-pointer transition-all
         ${
           isSelected
-            ? "bg-gray-800 border-2 border-blue-500"
+            ? "overflow-hidden border-2 border-[#66FFE1]"
             : "hover:bg-gray-800 border-2 border-transparent"
         }`}
     >
-      <div className="font-medium truncate">{stack.stackName}</div>
-      <div className="flex gap-2 mt-2">
-        <span className="text-xs px-2 py-1 bg-green-600 rounded">
-          AI: {stack.aiforecast.percentage}%
+      <div className="flex gap-3 mt-2">
+        <span className="text-black text-sm px-2 py-1 bg-gray-100 rounded">
+        ↑ F'CAST STAB.
         </span>
-        <span className="text-xs px-2 py-1 bg-yellow-600 rounded">
-          Final: {stack.aiforecast.percentage}%
+        <span className="text-black text-sm px-2 py-1 bg-gray-100 rounded">
+        ↑ F'CAST ACC.
         </span>
       </div>
+      <div className="font-xs truncate p-2 text-xs">Sample Stack</div>
     </div>
   );
 };

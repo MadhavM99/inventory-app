@@ -4,15 +4,15 @@ const StackData = ({ stack }) => {
   console.log(stack);
   const rows = [
     {
-      label: "AI FORECAST",
+      label: "Data 1",
       values: stack.aiforecast.quarters.map((q) => q.value),
     },
     {
-      label: "CONSUMPTION",
+      label: "Data 2",
       values: stack.consumption.quarters.map((q) => q.value),
     },
     {
-      label: "FINAL FORECAST",
+      label: "Data 3",
       values: stack.finalforecast.quarters.map((q) => q.value),
     },
   ];
@@ -23,7 +23,7 @@ const StackData = ({ stack }) => {
         style={{
           width: "100%",
           borderCollapse: "collapse",
-          background: "#1a232a",
+          background: "#193D4D",
           color: "#e5f8ff",
         }}
       >
@@ -35,7 +35,7 @@ const StackData = ({ stack }) => {
                   padding: "10px 16px",
                   fontWeight: 600,
                   borderRight: "1px solid #22313a",
-                  background: "#1a232a",
+                  background: "#193D4D",
                   minWidth: 140,
                   letterSpacing: 1,
                 }}

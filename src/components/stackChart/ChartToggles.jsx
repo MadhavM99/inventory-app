@@ -23,7 +23,7 @@ const ChartToggles = ({
         />
       </label>
       <div className="inline-flex items-center">
-        <span className="text-teal-500 ml-1">AI FORECAST</span>
+        <span className="text-teal-500 ml-1 text-sm">AI FORECAST</span>
         <div className="h-3 w-3 rounded-full bg-teal-500 ml-3 mr-1" />
         <span className="text-teal-500">88%</span>
       </div>
@@ -44,13 +44,13 @@ const ChartToggles = ({
         />
       </label>
       <div className="inline-flex items-center">
-        <span className="text-gray-300 ml-1">FINAL FORECAST</span>
+        <span className="text-gray-300 ml-1 text-sm">FINAL FORECAST</span>
         <div className="h-3 w-3 rounded-full bg-yellow-500 ml-3 mr-1" />
-        <span className="text-yellow-500">80%</span>
+        <span className="text-yellow-500 text-sm">80%</span>
       </div>
     </div>
     <div className="flex items-center">
-      <span className="text-gray-300 mr-2">Consumption:</span>
+      <span className="text-gray-300 mr-2 text-sm">Consumption:</span>
       <div className="w-12 border-b border-blue-500 border-solid" />
     </div>
   </div>

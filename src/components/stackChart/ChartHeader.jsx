@@ -26,7 +26,7 @@ const ChartHeader = ({ showConfidenceInterval, setShowConfidenceInterval }) => (
       </div>
     </div>
     <div className="flex items-center">
-      <div className="text-white mr-2">SHOW CONFIDENCE INTERVAL</div>
+      <div className="text-white mr-2 text-sm">SHOW CONFIDENCE INTERVAL</div>
       <label className="relative inline-flex items-center cursor-pointer">
         <input
           type="checkbox"

@@ -42,7 +42,7 @@ const WorldMap = () => {
         initialViewState={{
           longitude: 10,
           latitude: 20,
-          zoom: 2.8,
+          zoom: 1.9,
         }}
         style={{ width: "100%", height: "100%" }}
         mapStyle="/data/mapStyle.json"
