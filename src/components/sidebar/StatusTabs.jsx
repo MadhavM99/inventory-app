@@ -10,7 +10,7 @@ const StatusTabs = ({ selectedStatus, setSelectedStatus }) => (
       <button
         key={status}
         onClick={() => setSelectedStatus(status)}
-        className={`flex-1 py-3 text-sm font-medium ${
+        className={`flex-1 py-3 text-xs font-medium ${
           selectedStatus === status
             ? "border-b-2 border-[#66FFE1] text-[#66FFE1]"
             : "text-gray-400 hover:text-[#66FFE1]"

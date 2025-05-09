@@ -1,4 +1,6 @@
 import React from "react";
+import { Switch } from "@/components/ui/switch";
+
 
 const ChartToggles = ({
   showAIForecast,
@@ -6,54 +8,32 @@ const ChartToggles = ({
   showFinalForecast,
   setShowFinalForecast,
 }) => (
-  <div className="flex items-center mt-4 gap-6">
-    <div className="flex items-center gap-2">
-      <label className="relative inline-flex items-center cursor-pointer">
-        <input
-          type="checkbox"
-          className="sr-only peer"
+  <div className="flex items-center mt-1 gap-6">
+      <div className="flex items-center gap-3">
+        <Switch 
           checked={showAIForecast}
-          onChange={() => setShowAIForecast(!showAIForecast)}
+          onCheckedChange={setShowAIForecast}
         />
-        <div
-          className="w-11 h-6 bg-gray-700 rounded-full peer 
-          peer-checked:after:translate-x-full after:content-[''] after:absolute 
-          after:bg-white after:border after:rounded-full after:h-4 after:w-4 
-          after:top-1 after:left-1 after:transition-all"
-        />
-      </label>
-      <div className="inline-flex items-center">
-        <span className="text-teal-500 ml-1 text-sm">AI FORECAST</span>
-        <div className="h-3 w-3 rounded-full bg-teal-500 ml-3 mr-1" />
-        <span className="text-teal-500">88%</span>
+        <div className="h-4 w-1 bg-teal-500" />
+        <div className="flex items-center">
+          <span className="text-teal-500 text-[10px]">AI FORECAST</span>
+        </div>
       </div>
-    </div>
-    <div className="flex items-center gap-2">
-      <label className="relative inline-flex items-center cursor-pointer">
-        <input
-          type="checkbox"
-          className="sr-only peer"
+      <div className="flex items-center gap-3">
+        <Switch 
           checked={showFinalForecast}
-          onChange={() => setShowFinalForecast(!showFinalForecast)}
+          onCheckedChange={setShowFinalForecast}
         />
-        <div
-          className="w-11 h-6 bg-gray-700 rounded-full peer 
-          peer-checked:after:translate-x-full after:content-[''] after:absolute 
-          after:bg-white after:border after:rounded-full after:h-4 after:w-4 
-          after:top-1 after:left-1 after:transition-all"
-        />
-      </label>
-      <div className="inline-flex items-center">
-        <span className="text-gray-300 ml-1 text-sm">FINAL FORECAST</span>
-        <div className="h-3 w-3 rounded-full bg-yellow-500 ml-3 mr-1" />
-        <span className="text-yellow-500 text-sm">80%</span>
+        <div className="h-4 w-1 bg-yellow-500" />
+        <div className="flex items-center">
+          <span className="text-yellow-500 text-[10px]">FINAL FORECAST</span>
+        </div>
+      </div>
+      <div className="flex items-center ml-auto">
+        <span className="text-gray-300 mr-2 text-[10px]">Consumption:</span>
+        <div className="w-12 border-b border-blue-500" />
       </div>
     </div>
-    <div className="flex items-center">
-      <span className="text-gray-300 mr-2 text-sm">Consumption:</span>
-      <div className="w-12 border-b border-blue-500 border-solid" />
-    </div>
-  </div>
 );
 
 export default ChartToggles;

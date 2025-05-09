@@ -4,7 +4,7 @@ import StackItem from "./StackItem";
 
 const StackList = ({ stacks, selectedStackId, onStackSelect }) => {
   return (
-    <div className="flex-1 overflow-y-auto p-2">
+    <div className="flex-1 overflow-y-auto py-2">
       {stacks.map((stack) => (
         <StackItem
           key={stack.stackId}

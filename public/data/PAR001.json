@@ -1,26 +1,53 @@
 {
   "name": "Paris",
   "cityId": "PAR001",
-  "coords": [2.3522, 48.8566],
+  "coords": [
+    2.3522,
+    48.8566
+  ],
   "percentage": 81,
   "forecast": 605000,
   "forecast-trend": "up",
   "percentage-trend": "up",
   "forcast-chart": [
-    { "value": 15 },
-    { "value": 35 },
-    { "value": 22 },
-    { "value": 58 },
-    { "value": 33 },
-    { "value": 77 }
+    {
+      "value": 15
+    },
+    {
+      "value": 35
+    },
+    {
+      "value": 22
+    },
+    {
+      "value": 58
+    },
+    {
+      "value": 33
+    },
+    {
+      "value": 77
+    }
   ],
   "percentage-chart": [
-    { "value": 18 },
-    { "value": 14 },
-    { "value": 28 },
-    { "value": 65 },
-    { "value": 78 },
-    { "value": 39 }
+    {
+      "value": 18
+    },
+    {
+      "value": 14
+    },
+    {
+      "value": 28
+    },
+    {
+      "value": 65
+    },
+    {
+      "value": 78
+    },
+    {
+      "value": 39
+    }
   ],
   "stacks": [
     {
@@ -28,53 +55,195 @@
       "stackName": "Eiffel Stack",
       "stackStatus": "BACKLOG",
       "aiforecast": {
-        "percentage": 87,
+        "percentage": 89,
         "quarters": [
-          { "quarter": "Q3-2023", "value": 690000 },
-          { "quarter": "Q4-2023", "value": 645000 },
-          { "quarter": "Q1-2024", "value": 670000 },
-          { "quarter": "Q2-2024", "value": 725000 },
-          { "quarter": "Q3-2024", "value": 660000 },
-          { "quarter": "Q4-2024", "value": 635000 },
-          { "quarter": "Q1-2025", "value": 665000 },
-          { "quarter": "Q2-2025", "value": 668000 },
-          { "quarter": "Q3-2025", "value": 710000 },
-          { "quarter": "Q4-2025", "value": 702000 },
-          { "quarter": "Q1-2026", "value": 718000 },
-          { "quarter": "Q2-2026", "value": 722000 }
+          {
+            "quarter": "Q2-2022",
+            "value": 259913
+          },
+          {
+            "quarter": "Q3-2022",
+            "value": 807006
+          },
+          {
+            "quarter": "Q1-2023",
+            "value": 859338
+          },
+          {
+            "quarter": "Q2-2023",
+            "value": 222206
+          },
+          {
+            "quarter": "Q3-2023",
+            "value": 138104
+          },
+          {
+            "quarter": "Q4-2023",
+            "value": 667061
+          },
+          {
+            "quarter": "Q1-2024",
+            "value": 660718
+          },
+          {
+            "quarter": "Q2-2024",
+            "value": 759952
+          }
+        ],
+        "quartersDash": [
+          {
+            "quarter": "Q4-2024",
+            "value": 477757
+          },
+          {
+            "quarter": "Q1-2025",
+            "value": 209088
+          },
+          {
+            "quarter": "Q2-2025",
+            "value": 484960
+          },
+          {
+            "quarter": "Q3-2025",
+            "value": 550406
+          },
+          {
+            "quarter": "Q4-2025",
+            "value": 518684
+          },
+          {
+            "quarter": "Q1-2026",
+            "value": 875824
+          },
+          {
+            "quarter": "Q2-2026",
+            "value": 142787
+          }
         ]
       },
       "consumption": {
         "quarters": [
-          { "quarter": "Q3-2023", "value": 670000 },
-          { "quarter": "Q4-2023", "value": 630000 },
-          { "quarter": "Q1-2024", "value": 610000 },
-          { "quarter": "Q2-2024", "value": 590000 },
-          { "quarter": "Q3-2024", "value": 570000 },
-          { "quarter": "Q4-2024", "value": 585000 },
-          { "quarter": "Q1-2025", "value": 600000 },
-          { "quarter": "Q2-2025", "value": 620000 },
-          { "quarter": "Q3-2025", "value": 640000 },
-          { "quarter": "Q4-2025", "value": 650000 },
-          { "quarter": "Q1-2026", "value": 660000 },
-          { "quarter": "Q2-2026", "value": 670000 }
+          {
+            "quarter": "Q2-2022",
+            "value": 166537
+          },
+          {
+            "quarter": "Q3-2022",
+            "value": 584317
+          },
+          {
+            "quarter": "Q1-2023",
+            "value": 814504
+          },
+          {
+            "quarter": "Q2-2023",
+            "value": 729174
+          },
+          {
+            "quarter": "Q3-2023",
+            "value": 883307
+          },
+          {
+            "quarter": "Q4-2023",
+            "value": 818726
+          },
+          {
+            "quarter": "Q1-2024",
+            "value": 634159
+          },
+          {
+            "quarter": "Q2-2024",
+            "value": 559749
+          }
+        ],
+        "quartersDash": [
+          {
+            "quarter": "Q3-2024",
+            "value": 435072
+          },
+          {
+            "quarter": "Q4-2024",
+            "value": 759979
+          },
+          {
+            "quarter": "Q1-2025",
+            "value": 448614
+          },
+          {
+            "quarter": "Q2-2025",
+            "value": 284613
+          },
+          {
+            "quarter": "Q3-2025",
+            "value": 589767
+          },
+          {
+            "quarter": "Q4-2025",
+            "value": 569757
+          },
+          {
+            "quarter": "Q1-2026",
+            "value": 688418
+          },
+          {
+            "quarter": "Q2-2026",
+            "value": 693322
+          }
         ]
       },
       "finalforecast": {
-        "percentage": 79,
+        "percentage": 80,
         "quarters": [
-          { "quarter": "Q3-2023", "value": 600000 },
-          { "quarter": "Q4-2023", "value": 570000 },
-          { "quarter": "Q1-2024", "value": 580000 },
-          { "quarter": "Q2-2024", "value": 410000 },
-          { "quarter": "Q3-2024", "value": 455000 },
-          { "quarter": "Q4-2024", "value": 535000 },
-          { "quarter": "Q1-2025", "value": 475000 },
-          { "quarter": "Q2-2025", "value": 500000 },
-          { "quarter": "Q3-2025", "value": 510000 },
-          { "quarter": "Q4-2025", "value": 540000 },
-          { "quarter": "Q1-2026", "value": 550000 },
-          { "quarter": "Q2-2026", "value": 565000 }
+          {
+            "quarter": "Q3-2023",
+            "value": 234195
+          },
+          {
+            "quarter": "Q4-2023",
+            "value": 439664
+          },
+          {
+            "quarter": "Q1-2024",
+            "value": 562012
+          },
+          {
+            "quarter": "Q2-2024",
+            "value": 380196
+          }
+        ],
+        "quartersDash": [
+          {
+            "quarter": "Q3-2024",
+            "value": 686549
+          },
+          {
+            "quarter": "Q4-2024",
+            "value": 412381
+          },
+          {
+            "quarter": "Q1-2025",
+            "value": 552657
+          },
+          {
+            "quarter": "Q2-2025",
+            "value": 477481
+          },
+          {
+            "quarter": "Q3-2025",
+            "value": 874811
+          },
+          {
+            "quarter": "Q4-2025",
+            "value": 345318
+          },
+          {
+            "quarter": "Q1-2026",
+            "value": 855285
+          },
+          {
+            "quarter": "Q2-2026",
+            "value": 734792
+          }
         ]
       }
     },
@@ -83,53 +252,195 @@
       "stackName": "Louvre Stack",
       "stackStatus": "BACKLOG",
       "aiforecast": {
-        "percentage": 85,
+        "percentage": 89,
         "quarters": [
-          { "quarter": "Q3-2023", "value": 670000 },
-          { "quarter": "Q4-2023", "value": 640000 },
-          { "quarter": "Q1-2024", "value": 660000 },
-          { "quarter": "Q2-2024", "value": 710000 },
-          { "quarter": "Q3-2024", "value": 650000 },
-          { "quarter": "Q4-2024", "value": 620000 },
-          { "quarter": "Q1-2025", "value": 650000 },
-          { "quarter": "Q2-2025", "value": 655000 },
-          { "quarter": "Q3-2025", "value": 695000 },
-          { "quarter": "Q4-2025", "value": 690000 },
-          { "quarter": "Q1-2026", "value": 705000 },
-          { "quarter": "Q2-2026", "value": 710000 }
+          {
+            "quarter": "Q2-2022",
+            "value": 147141
+          },
+          {
+            "quarter": "Q3-2022",
+            "value": 782563
+          },
+          {
+            "quarter": "Q1-2023",
+            "value": 778827
+          },
+          {
+            "quarter": "Q2-2023",
+            "value": 582754
+          },
+          {
+            "quarter": "Q3-2023",
+            "value": 515809
+          },
+          {
+            "quarter": "Q4-2023",
+            "value": 927332
+          },
+          {
+            "quarter": "Q1-2024",
+            "value": 377993
+          },
+          {
+            "quarter": "Q2-2024",
+            "value": 349278
+          }
+        ],
+        "quartersDash": [
+          {
+            "quarter": "Q4-2024",
+            "value": 116970
+          },
+          {
+            "quarter": "Q1-2025",
+            "value": 793862
+          },
+          {
+            "quarter": "Q2-2025",
+            "value": 150099
+          },
+          {
+            "quarter": "Q3-2025",
+            "value": 623304
+          },
+          {
+            "quarter": "Q4-2025",
+            "value": 447952
+          },
+          {
+            "quarter": "Q1-2026",
+            "value": 721525
+          },
+          {
+            "quarter": "Q2-2026",
+            "value": 846977
+          }
         ]
       },
       "consumption": {
         "quarters": [
-          { "quarter": "Q3-2023", "value": 655000 },
-          { "quarter": "Q4-2023", "value": 615000 },
-          { "quarter": "Q1-2024", "value": 595000 },
-          { "quarter": "Q2-2024", "value": 575000 },
-          { "quarter": "Q3-2024", "value": 555000 },
-          { "quarter": "Q4-2024", "value": 570000 },
-          { "quarter": "Q1-2025", "value": 585000 },
-          { "quarter": "Q2-2025", "value": 600000 },
-          { "quarter": "Q3-2025", "value": 615000 },
-          { "quarter": "Q4-2025", "value": 630000 },
-          { "quarter": "Q1-2026", "value": 645000 },
-          { "quarter": "Q2-2026", "value": 660000 }
+          {
+            "quarter": "Q2-2022",
+            "value": 331539
+          },
+          {
+            "quarter": "Q3-2022",
+            "value": 350823
+          },
+          {
+            "quarter": "Q1-2023",
+            "value": 272314
+          },
+          {
+            "quarter": "Q2-2023",
+            "value": 167546
+          },
+          {
+            "quarter": "Q3-2023",
+            "value": 472211
+          },
+          {
+            "quarter": "Q4-2023",
+            "value": 470926
+          },
+          {
+            "quarter": "Q1-2024",
+            "value": 267539
+          },
+          {
+            "quarter": "Q2-2024",
+            "value": 337378
+          }
+        ],
+        "quartersDash": [
+          {
+            "quarter": "Q3-2024",
+            "value": 749291
+          },
+          {
+            "quarter": "Q4-2024",
+            "value": 207505
+          },
+          {
+            "quarter": "Q1-2025",
+            "value": 757732
+          },
+          {
+            "quarter": "Q2-2025",
+            "value": 148730
+          },
+          {
+            "quarter": "Q3-2025",
+            "value": 486093
+          },
+          {
+            "quarter": "Q4-2025",
+            "value": 394444
+          },
+          {
+            "quarter": "Q1-2026",
+            "value": 286886
+          },
+          {
+            "quarter": "Q2-2026",
+            "value": 643764
+          }
         ]
       },
       "finalforecast": {
-        "percentage": 77,
+        "percentage": 80,
         "quarters": [
-          { "quarter": "Q3-2023", "value": 580000 },
-          { "quarter": "Q4-2023", "value": 550000 },
-          { "quarter": "Q1-2024", "value": 560000 },
-          { "quarter": "Q2-2024", "value": 400000 },
-          { "quarter": "Q3-2024", "value": 445000 },
-          { "quarter": "Q4-2024", "value": 520000 },
-          { "quarter": "Q1-2025", "value": 460000 },
-          { "quarter": "Q2-2025", "value": 485000 },
-          { "quarter": "Q3-2025", "value": 495000 },
-          { "quarter": "Q4-2025", "value": 530000 },
-          { "quarter": "Q1-2026", "value": 540000 },
-          { "quarter": "Q2-2026", "value": 555000 }
+          {
+            "quarter": "Q3-2023",
+            "value": 627913
+          },
+          {
+            "quarter": "Q4-2023",
+            "value": 649872
+          },
+          {
+            "quarter": "Q1-2024",
+            "value": 247310
+          },
+          {
+            "quarter": "Q2-2024",
+            "value": 182485
+          }
+        ],
+        "quartersDash": [
+          {
+            "quarter": "Q3-2024",
+            "value": 966230
+          },
+          {
+            "quarter": "Q4-2024",
+            "value": 670286
+          },
+          {
+            "quarter": "Q1-2025",
+            "value": 337635
+          },
+          {
+            "quarter": "Q2-2025",
+            "value": 725974
+          },
+          {
+            "quarter": "Q3-2025",
+            "value": 609985
+          },
+          {
+            "quarter": "Q4-2025",
+            "value": 370821
+          },
+          {
+            "quarter": "Q1-2026",
+            "value": 764159
+          },
+          {
+            "quarter": "Q2-2026",
+            "value": 188166
+          }
         ]
       }
     },
@@ -140,51 +451,193 @@
       "aiforecast": {
         "percentage": 89,
         "quarters": [
-          { "quarter": "Q3-2023", "value": 700000 },
-          { "quarter": "Q4-2023", "value": 660000 },
-          { "quarter": "Q1-2024", "value": 690000 },
-          { "quarter": "Q2-2024", "value": 740000 },
-          { "quarter": "Q3-2024", "value": 670000 },
-          { "quarter": "Q4-2024", "value": 640000 },
-          { "quarter": "Q1-2025", "value": 670000 },
-          { "quarter": "Q2-2025", "value": 675000 },
-          { "quarter": "Q3-2025", "value": 715000 },
-          { "quarter": "Q4-2025", "value": 710000 },
-          { "quarter": "Q1-2026", "value": 725000 },
-          { "quarter": "Q2-2026", "value": 730000 }
+          {
+            "quarter": "Q2-2022",
+            "value": 339702
+          },
+          {
+            "quarter": "Q3-2022",
+            "value": 795226
+          },
+          {
+            "quarter": "Q1-2023",
+            "value": 635932
+          },
+          {
+            "quarter": "Q2-2023",
+            "value": 507429
+          },
+          {
+            "quarter": "Q3-2023",
+            "value": 560044
+          },
+          {
+            "quarter": "Q4-2023",
+            "value": 749288
+          },
+          {
+            "quarter": "Q1-2024",
+            "value": 979778
+          },
+          {
+            "quarter": "Q2-2024",
+            "value": 195906
+          }
+        ],
+        "quartersDash": [
+          {
+            "quarter": "Q4-2024",
+            "value": 678453
+          },
+          {
+            "quarter": "Q1-2025",
+            "value": 943399
+          },
+          {
+            "quarter": "Q2-2025",
+            "value": 464696
+          },
+          {
+            "quarter": "Q3-2025",
+            "value": 504824
+          },
+          {
+            "quarter": "Q4-2025",
+            "value": 277329
+          },
+          {
+            "quarter": "Q1-2026",
+            "value": 448050
+          },
+          {
+            "quarter": "Q2-2026",
+            "value": 663623
+          }
         ]
       },
       "consumption": {
         "quarters": [
-          { "quarter": "Q3-2023", "value": 680000 },
-          { "quarter": "Q4-2023", "value": 640000 },
-          { "quarter": "Q1-2024", "value": 620000 },
-          { "quarter": "Q2-2024", "value": 600000 },
-          { "quarter": "Q3-2024", "value": 580000 },
-          { "quarter": "Q4-2024", "value": 595000 },
-          { "quarter": "Q1-2025", "value": 610000 },
-          { "quarter": "Q2-2025", "value": 625000 },
-          { "quarter": "Q3-2025", "value": 640000 },
-          { "quarter": "Q4-2025", "value": 655000 },
-          { "quarter": "Q1-2026", "value": 670000 },
-          { "quarter": "Q2-2026", "value": 685000 }
+          {
+            "quarter": "Q2-2022",
+            "value": 153810
+          },
+          {
+            "quarter": "Q3-2022",
+            "value": 936916
+          },
+          {
+            "quarter": "Q1-2023",
+            "value": 290751
+          },
+          {
+            "quarter": "Q2-2023",
+            "value": 588936
+          },
+          {
+            "quarter": "Q3-2023",
+            "value": 573654
+          },
+          {
+            "quarter": "Q4-2023",
+            "value": 848150
+          },
+          {
+            "quarter": "Q1-2024",
+            "value": 914527
+          },
+          {
+            "quarter": "Q2-2024",
+            "value": 270662
+          }
+        ],
+        "quartersDash": [
+          {
+            "quarter": "Q3-2024",
+            "value": 801577
+          },
+          {
+            "quarter": "Q4-2024",
+            "value": 570542
+          },
+          {
+            "quarter": "Q1-2025",
+            "value": 573958
+          },
+          {
+            "quarter": "Q2-2025",
+            "value": 268079
+          },
+          {
+            "quarter": "Q3-2025",
+            "value": 394049
+          },
+          {
+            "quarter": "Q4-2025",
+            "value": 846545
+          },
+          {
+            "quarter": "Q1-2026",
+            "value": 791233
+          },
+          {
+            "quarter": "Q2-2026",
+            "value": 580898
+          }
         ]
       },
       "finalforecast": {
-        "percentage": 81,
+        "percentage": 80,
         "quarters": [
-          { "quarter": "Q3-2023", "value": 610000 },
-          { "quarter": "Q4-2023", "value": 580000 },
-          { "quarter": "Q1-2024", "value": 590000 },
-          { "quarter": "Q2-2024", "value": 420000 },
-          { "quarter": "Q3-2024", "value": 465000 },
-          { "quarter": "Q4-2024", "value": 546000 },
-          { "quarter": "Q1-2025", "value": 484000 },
-          { "quarter": "Q2-2025", "value": 511000 },
-          { "quarter": "Q3-2025", "value": 523000 },
-          { "quarter": "Q4-2025", "value": 560000 },
-          { "quarter": "Q1-2026", "value": 555000 },
-          { "quarter": "Q2-2026", "value": 570000 }
+          {
+            "quarter": "Q3-2023",
+            "value": 738087
+          },
+          {
+            "quarter": "Q4-2023",
+            "value": 779985
+          },
+          {
+            "quarter": "Q1-2024",
+            "value": 732468
+          },
+          {
+            "quarter": "Q2-2024",
+            "value": 929734
+          }
+        ],
+        "quartersDash": [
+          {
+            "quarter": "Q3-2024",
+            "value": 850624
+          },
+          {
+            "quarter": "Q4-2024",
+            "value": 497789
+          },
+          {
+            "quarter": "Q1-2025",
+            "value": 367149
+          },
+          {
+            "quarter": "Q2-2025",
+            "value": 641036
+          },
+          {
+            "quarter": "Q3-2025",
+            "value": 512038
+          },
+          {
+            "quarter": "Q4-2025",
+            "value": 236241
+          },
+          {
+            "quarter": "Q1-2026",
+            "value": 623351
+          },
+          {
+            "quarter": "Q2-2026",
+            "value": 712136
+          }
         ]
       }
     },
@@ -193,53 +646,195 @@
       "stackName": "Seine Stack",
       "stackStatus": "BACKLOG",
       "aiforecast": {
-        "percentage": 84,
+        "percentage": 89,
         "quarters": [
-          { "quarter": "Q3-2023", "value": 660000 },
-          { "quarter": "Q4-2023", "value": 620000 },
-          { "quarter": "Q1-2024", "value": 640000 },
-          { "quarter": "Q2-2024", "value": 695000 },
-          { "quarter": "Q3-2024", "value": 630000 },
-          { "quarter": "Q4-2024", "value": 600000 },
-          { "quarter": "Q1-2025", "value": 630000 },
-          { "quarter": "Q2-2025", "value": 635000 },
-          { "quarter": "Q3-2025", "value": 675000 },
-          { "quarter": "Q4-2025", "value": 670000 },
-          { "quarter": "Q1-2026", "value": 685000 },
-          { "quarter": "Q2-2026", "value": 690000 }
+          {
+            "quarter": "Q2-2022",
+            "value": 843991
+          },
+          {
+            "quarter": "Q3-2022",
+            "value": 273423
+          },
+          {
+            "quarter": "Q1-2023",
+            "value": 747714
+          },
+          {
+            "quarter": "Q2-2023",
+            "value": 563409
+          },
+          {
+            "quarter": "Q3-2023",
+            "value": 458090
+          },
+          {
+            "quarter": "Q4-2023",
+            "value": 574285
+          },
+          {
+            "quarter": "Q1-2024",
+            "value": 791774
+          },
+          {
+            "quarter": "Q2-2024",
+            "value": 156172
+          }
+        ],
+        "quartersDash": [
+          {
+            "quarter": "Q4-2024",
+            "value": 107519
+          },
+          {
+            "quarter": "Q1-2025",
+            "value": 997187
+          },
+          {
+            "quarter": "Q2-2025",
+            "value": 257032
+          },
+          {
+            "quarter": "Q3-2025",
+            "value": 305689
+          },
+          {
+            "quarter": "Q4-2025",
+            "value": 419062
+          },
+          {
+            "quarter": "Q1-2026",
+            "value": 626156
+          },
+          {
+            "quarter": "Q2-2026",
+            "value": 999037
+          }
         ]
       },
       "consumption": {
         "quarters": [
-          { "quarter": "Q3-2023", "value": 645000 },
-          { "quarter": "Q4-2023", "value": 605000 },
-          { "quarter": "Q1-2024", "value": 585000 },
-          { "quarter": "Q2-2024", "value": 565000 },
-          { "quarter": "Q3-2024", "value": 545000 },
-          { "quarter": "Q4-2024", "value": 560000 },
-          { "quarter": "Q1-2025", "value": 575000 },
-          { "quarter": "Q2-2025", "value": 590000 },
-          { "quarter": "Q3-2025", "value": 605000 },
-          { "quarter": "Q4-2025", "value": 620000 },
-          { "quarter": "Q1-2026", "value": 635000 },
-          { "quarter": "Q2-2026", "value": 650000 }
+          {
+            "quarter": "Q2-2022",
+            "value": 148359
+          },
+          {
+            "quarter": "Q3-2022",
+            "value": 778050
+          },
+          {
+            "quarter": "Q1-2023",
+            "value": 856003
+          },
+          {
+            "quarter": "Q2-2023",
+            "value": 169232
+          },
+          {
+            "quarter": "Q3-2023",
+            "value": 465440
+          },
+          {
+            "quarter": "Q4-2023",
+            "value": 885213
+          },
+          {
+            "quarter": "Q1-2024",
+            "value": 322686
+          },
+          {
+            "quarter": "Q2-2024",
+            "value": 317282
+          }
+        ],
+        "quartersDash": [
+          {
+            "quarter": "Q3-2024",
+            "value": 356106
+          },
+          {
+            "quarter": "Q4-2024",
+            "value": 104543
+          },
+          {
+            "quarter": "Q1-2025",
+            "value": 712085
+          },
+          {
+            "quarter": "Q2-2025",
+            "value": 272050
+          },
+          {
+            "quarter": "Q3-2025",
+            "value": 815716
+          },
+          {
+            "quarter": "Q4-2025",
+            "value": 497369
+          },
+          {
+            "quarter": "Q1-2026",
+            "value": 734811
+          },
+          {
+            "quarter": "Q2-2026",
+            "value": 155910
+          }
         ]
       },
       "finalforecast": {
-        "percentage": 76,
+        "percentage": 80,
         "quarters": [
-          { "quarter": "Q3-2023", "value": 570000 },
-          { "quarter": "Q4-2023", "value": 540000 },
-          { "quarter": "Q1-2024", "value": 550000 },
-          { "quarter": "Q2-2024", "value": 390000 },
-          { "quarter": "Q3-2024", "value": 435000 },
-          { "quarter": "Q4-2024", "value": 510000 },
-          { "quarter": "Q1-2025", "value": 450000 },
-          { "quarter": "Q2-2025", "value": 475000 },
-          { "quarter": "Q3-2025", "value": 485000 },
-          { "quarter": "Q4-2025", "value": 520000 },
-          { "quarter": "Q1-2026", "value": 530000 },
-          { "quarter": "Q2-2026", "value": 545000 }
+          {
+            "quarter": "Q3-2023",
+            "value": 470462
+          },
+          {
+            "quarter": "Q4-2023",
+            "value": 356711
+          },
+          {
+            "quarter": "Q1-2024",
+            "value": 245626
+          },
+          {
+            "quarter": "Q2-2024",
+            "value": 886155
+          }
+        ],
+        "quartersDash": [
+          {
+            "quarter": "Q3-2024",
+            "value": 923033
+          },
+          {
+            "quarter": "Q4-2024",
+            "value": 509486
+          },
+          {
+            "quarter": "Q1-2025",
+            "value": 697806
+          },
+          {
+            "quarter": "Q2-2025",
+            "value": 242424
+          },
+          {
+            "quarter": "Q3-2025",
+            "value": 345131
+          },
+          {
+            "quarter": "Q4-2025",
+            "value": 159877
+          },
+          {
+            "quarter": "Q1-2026",
+            "value": 607877
+          },
+          {
+            "quarter": "Q2-2026",
+            "value": 923710
+          }
         ]
       }
     },
@@ -248,53 +843,195 @@
       "stackName": "Versailles Stack",
       "stackStatus": "BACKLOG",
       "aiforecast": {
-        "percentage": 88,
+        "percentage": 89,
         "quarters": [
-          { "quarter": "Q3-2023", "value": 705000 },
-          { "quarter": "Q4-2023", "value": 660000 },
-          { "quarter": "Q1-2024", "value": 690000 },
-          { "quarter": "Q2-2024", "value": 745000 },
-          { "quarter": "Q3-2024", "value": 675000 },
-          { "quarter": "Q4-2024", "value": 645000 },
-          { "quarter": "Q1-2025", "value": 675000 },
-          { "quarter": "Q2-2025", "value": 680000 },
-          { "quarter": "Q3-2025", "value": 720000 },
-          { "quarter": "Q4-2025", "value": 715000 },
-          { "quarter": "Q1-2026", "value": 730000 },
-          { "quarter": "Q2-2026", "value": 735000 }
+          {
+            "quarter": "Q2-2022",
+            "value": 102186
+          },
+          {
+            "quarter": "Q3-2022",
+            "value": 966917
+          },
+          {
+            "quarter": "Q1-2023",
+            "value": 513211
+          },
+          {
+            "quarter": "Q2-2023",
+            "value": 561382
+          },
+          {
+            "quarter": "Q3-2023",
+            "value": 768952
+          },
+          {
+            "quarter": "Q4-2023",
+            "value": 395664
+          },
+          {
+            "quarter": "Q1-2024",
+            "value": 392464
+          },
+          {
+            "quarter": "Q2-2024",
+            "value": 426368
+          }
+        ],
+        "quartersDash": [
+          {
+            "quarter": "Q4-2024",
+            "value": 167315
+          },
+          {
+            "quarter": "Q1-2025",
+            "value": 133627
+          },
+          {
+            "quarter": "Q2-2025",
+            "value": 872246
+          },
+          {
+            "quarter": "Q3-2025",
+            "value": 732886
+          },
+          {
+            "quarter": "Q4-2025",
+            "value": 447781
+          },
+          {
+            "quarter": "Q1-2026",
+            "value": 671352
+          },
+          {
+            "quarter": "Q2-2026",
+            "value": 122638
+          }
         ]
       },
       "consumption": {
         "quarters": [
-          { "quarter": "Q3-2023", "value": 685000 },
-          { "quarter": "Q4-2023", "value": 645000 },
-          { "quarter": "Q1-2024", "value": 625000 },
-          { "quarter": "Q2-2024", "value": 605000 },
-          { "quarter": "Q3-2024", "value": 585000 },
-          { "quarter": "Q4-2024", "value": 600000 },
-          { "quarter": "Q1-2025", "value": 615000 },
-          { "quarter": "Q2-2025", "value": 630000 },
-          { "quarter": "Q3-2025", "value": 645000 },
-          { "quarter": "Q4-2025", "value": 660000 },
-          { "quarter": "Q1-2026", "value": 675000 },
-          { "quarter": "Q2-2026", "value": 690000 }
+          {
+            "quarter": "Q2-2022",
+            "value": 742648
+          },
+          {
+            "quarter": "Q3-2022",
+            "value": 162783
+          },
+          {
+            "quarter": "Q1-2023",
+            "value": 834268
+          },
+          {
+            "quarter": "Q2-2023",
+            "value": 558115
+          },
+          {
+            "quarter": "Q3-2023",
+            "value": 603027
+          },
+          {
+            "quarter": "Q4-2023",
+            "value": 790408
+          },
+          {
+            "quarter": "Q1-2024",
+            "value": 693700
+          },
+          {
+            "quarter": "Q2-2024",
+            "value": 765525
+          }
+        ],
+        "quartersDash": [
+          {
+            "quarter": "Q3-2024",
+            "value": 588019
+          },
+          {
+            "quarter": "Q4-2024",
+            "value": 442085
+          },
+          {
+            "quarter": "Q1-2025",
+            "value": 914666
+          },
+          {
+            "quarter": "Q2-2025",
+            "value": 935620
+          },
+          {
+            "quarter": "Q3-2025",
+            "value": 951868
+          },
+          {
+            "quarter": "Q4-2025",
+            "value": 427604
+          },
+          {
+            "quarter": "Q1-2026",
+            "value": 874079
+          },
+          {
+            "quarter": "Q2-2026",
+            "value": 393888
+          }
         ]
       },
       "finalforecast": {
         "percentage": 80,
         "quarters": [
-          { "quarter": "Q3-2023", "value": 620000 },
-          { "quarter": "Q4-2023", "value": 590000 },
-          { "quarter": "Q1-2024", "value": 600000 },
-          { "quarter": "Q2-2024", "value": 430000 },
-          { "quarter": "Q3-2024", "value": 475000 },
-          { "quarter": "Q4-2024", "value": 555000 },
-          { "quarter": "Q1-2025", "value": 495000 },
-          { "quarter": "Q2-2025", "value": 520000 },
-          { "quarter": "Q3-2025", "value": 530000 },
-          { "quarter": "Q4-2025", "value": 560000 },
-          { "quarter": "Q1-2026", "value": 570000 },
-          { "quarter": "Q2-2026", "value": 585000 }
+          {
+            "quarter": "Q3-2023",
+            "value": 152342
+          },
+          {
+            "quarter": "Q4-2023",
+            "value": 602497
+          },
+          {
+            "quarter": "Q1-2024",
+            "value": 169609
+          },
+          {
+            "quarter": "Q2-2024",
+            "value": 608556
+          }
+        ],
+        "quartersDash": [
+          {
+            "quarter": "Q3-2024",
+            "value": 992760
+          },
+          {
+            "quarter": "Q4-2024",
+            "value": 272658
+          },
+          {
+            "quarter": "Q1-2025",
+            "value": 278413
+          },
+          {
+            "quarter": "Q2-2025",
+            "value": 823520
+          },
+          {
+            "quarter": "Q3-2025",
+            "value": 520409
+          },
+          {
+            "quarter": "Q4-2025",
+            "value": 700366
+          },
+          {
+            "quarter": "Q1-2026",
+            "value": 717652
+          },
+          {
+            "quarter": "Q2-2026",
+            "value": 998641
+          }
         ]
       }
     },
@@ -303,53 +1040,195 @@
       "stackName": "Sorbonne Stack",
       "stackStatus": "BACKLOG",
       "aiforecast": {
-        "percentage": 90,
+        "percentage": 89,
         "quarters": [
-          { "quarter": "Q3-2023", "value": 720000 },
-          { "quarter": "Q4-2023", "value": 680000 },
-          { "quarter": "Q1-2024", "value": 710000 },
-          { "quarter": "Q2-2024", "value": 760000 },
-          { "quarter": "Q3-2024", "value": 690000 },
-          { "quarter": "Q4-2024", "value": 660000 },
-          { "quarter": "Q1-2025", "value": 690000 },
-          { "quarter": "Q2-2025", "value": 695000 },
-          { "quarter": "Q3-2025", "value": 735000 },
-          { "quarter": "Q4-2025", "value": 730000 },
-          { "quarter": "Q1-2026", "value": 745000 },
-          { "quarter": "Q2-2026", "value": 750000 }
+          {
+            "quarter": "Q2-2022",
+            "value": 275896
+          },
+          {
+            "quarter": "Q3-2022",
+            "value": 676179
+          },
+          {
+            "quarter": "Q1-2023",
+            "value": 688321
+          },
+          {
+            "quarter": "Q2-2023",
+            "value": 160007
+          },
+          {
+            "quarter": "Q3-2023",
+            "value": 137417
+          },
+          {
+            "quarter": "Q4-2023",
+            "value": 408885
+          },
+          {
+            "quarter": "Q1-2024",
+            "value": 627864
+          },
+          {
+            "quarter": "Q2-2024",
+            "value": 504575
+          }
+        ],
+        "quartersDash": [
+          {
+            "quarter": "Q4-2024",
+            "value": 108951
+          },
+          {
+            "quarter": "Q1-2025",
+            "value": 240787
+          },
+          {
+            "quarter": "Q2-2025",
+            "value": 992833
+          },
+          {
+            "quarter": "Q3-2025",
+            "value": 153676
+          },
+          {
+            "quarter": "Q4-2025",
+            "value": 298239
+          },
+          {
+            "quarter": "Q1-2026",
+            "value": 295294
+          },
+          {
+            "quarter": "Q2-2026",
+            "value": 784244
+          }
         ]
       },
       "consumption": {
         "quarters": [
-          { "quarter": "Q3-2023", "value": 700000 },
-          { "quarter": "Q4-2023", "value": 660000 },
-          { "quarter": "Q1-2024", "value": 640000 },
-          { "quarter": "Q2-2024", "value": 620000 },
-          { "quarter": "Q3-2024", "value": 600000 },
-          { "quarter": "Q4-2024", "value": 615000 },
-          { "quarter": "Q1-2025", "value": 630000 },
-          { "quarter": "Q2-2025", "value": 645000 },
-          { "quarter": "Q3-2025", "value": 660000 },
-          { "quarter": "Q4-2025", "value": 675000 },
-          { "quarter": "Q1-2026", "value": 690000 },
-          { "quarter": "Q2-2026", "value": 705000 }
+          {
+            "quarter": "Q2-2022",
+            "value": 230422
+          },
+          {
+            "quarter": "Q3-2022",
+            "value": 342039
+          },
+          {
+            "quarter": "Q1-2023",
+            "value": 200834
+          },
+          {
+            "quarter": "Q2-2023",
+            "value": 330270
+          },
+          {
+            "quarter": "Q3-2023",
+            "value": 247719
+          },
+          {
+            "quarter": "Q4-2023",
+            "value": 899320
+          },
+          {
+            "quarter": "Q1-2024",
+            "value": 785352
+          },
+          {
+            "quarter": "Q2-2024",
+            "value": 915870
+          }
+        ],
+        "quartersDash": [
+          {
+            "quarter": "Q3-2024",
+            "value": 421347
+          },
+          {
+            "quarter": "Q4-2024",
+            "value": 351010
+          },
+          {
+            "quarter": "Q1-2025",
+            "value": 985415
+          },
+          {
+            "quarter": "Q2-2025",
+            "value": 914319
+          },
+          {
+            "quarter": "Q3-2025",
+            "value": 877814
+          },
+          {
+            "quarter": "Q4-2025",
+            "value": 683118
+          },
+          {
+            "quarter": "Q1-2026",
+            "value": 398353
+          },
+          {
+            "quarter": "Q2-2026",
+            "value": 449646
+          }
         ]
       },
       "finalforecast": {
-        "percentage": 82,
+        "percentage": 80,
         "quarters": [
-          { "quarter": "Q3-2023", "value": 630000 },
-          { "quarter": "Q4-2023", "value": 600000 },
-          { "quarter": "Q1-2024", "value": 610000 },
-          { "quarter": "Q2-2024", "value": 430000 },
-          { "quarter": "Q3-2024", "value": 475000 },
-          { "quarter": "Q4-2024", "value": 555000 },
-          { "quarter": "Q1-2025", "value": 495000 },
-          { "quarter": "Q2-2025", "value": 520000 },
-          { "quarter": "Q3-2025", "value": 530000 },
-          { "quarter": "Q4-2025", "value": 560000 },
-          { "quarter": "Q1-2026", "value": 570000 },
-          { "quarter": "Q2-2026", "value": 585000 }
+          {
+            "quarter": "Q3-2023",
+            "value": 982871
+          },
+          {
+            "quarter": "Q4-2023",
+            "value": 139930
+          },
+          {
+            "quarter": "Q1-2024",
+            "value": 941525
+          },
+          {
+            "quarter": "Q2-2024",
+            "value": 999321
+          }
+        ],
+        "quartersDash": [
+          {
+            "quarter": "Q3-2024",
+            "value": 463641
+          },
+          {
+            "quarter": "Q4-2024",
+            "value": 854479
+          },
+          {
+            "quarter": "Q1-2025",
+            "value": 771311
+          },
+          {
+            "quarter": "Q2-2025",
+            "value": 846917
+          },
+          {
+            "quarter": "Q3-2025",
+            "value": 607282
+          },
+          {
+            "quarter": "Q4-2025",
+            "value": 317507
+          },
+          {
+            "quarter": "Q1-2026",
+            "value": 951084
+          },
+          {
+            "quarter": "Q2-2026",
+            "value": 610672
+          }
         ]
       }
     }

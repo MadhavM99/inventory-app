@@ -22,7 +22,7 @@ const ForecastLineChart = ({
   };
 
   return (
-    <div style={{ height: "230px", width: "100%" }}>
+    <div style={{ height: "400px", width: "100%" }}>
       <ResponsiveContainer>
         <LineChart
           data={chartData}
@@ -56,39 +56,21 @@ const ForecastLineChart = ({
             strokeWidth={1}
           />
 
-          <Line
-            type="linear"
-            dataKey="consumption"
-            stroke="#3182bd"
-            strokeWidth={2}
-            dot={{ r: 3, fill: "#3182bd" }}
-            activeDot={{ r: 5 }}
-            connectNulls
-          />
-
           {showAIForecast && (
-            <Line
-              type="linear"
-              dataKey="aiforecast"
-              stroke="#00d68f"
-              strokeWidth={2}
-              dot={{ r: 3, fill: "#00d68f" }}
-              activeDot={{ r: 5 }}
-              strokeDasharray="5 5"
-            />
+            <Line type="linear" dataKey="aiforecast" stroke="#00bba7" strokeWidth={2} dot={{ r: 3, fill: "#00d68f" }} activeDot={{ r: 5 }} />
           )}
-
+          {showAIForecast && (
+            <Line type="linear" dataKey="aiforecastdash" stroke="#00bba7" strokeWidth={2} dot={{ r: 3, fill: "#00d68f" }} activeDot={{ r: 5 }}  strokeDasharray="3 3"/>
+          )}
           {showFinalForecast && (
-            <Line
-              type="linear"
-              dataKey="finalforecast"
-              stroke="#ffd700"
-              strokeWidth={2}
-              dot={{ r: 3, fill: "#ffd700" }}
-              activeDot={{ r: 5 }}
-              strokeDasharray="5 5"
-            />
+            <Line type="linear" dataKey="finalforecast" stroke="#efb000" strokeWidth={2} dot={{ r: 3, fill: "#efb000" }} activeDot={{ r: 5 }} />
           )}
+          {showFinalForecast && (
+            <Line type="linear" dataKey="finalforecastdash" stroke="#efb000" strokeWidth={2} dot={{ r: 3, fill: "#efb000" }} activeDot={{ r: 5 }} strokeDasharray="3 3"/>
+          )}
+          <Line type="linear" dataKey="consumption" stroke="#2b7fff" strokeWidth={2} dot={{ r: 3, fill: "#2b7fff" }} activeDot={{ r: 5 }} />
+          <Line type="linear" dataKey="consumptiondash" stroke="#2b7fff" strokeWidth={2} dot={{ r: 3, fill: "#2b7fff" }} activeDot={{ r: 5 }} strokeDasharray="3 3"/>
+
         </LineChart>
       </ResponsiveContainer>
     </div>
