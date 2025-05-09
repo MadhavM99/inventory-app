@@ -1,5 +1,7 @@
 # WebApp Project
 
+# LINK TO THE LIVE PROJECT: https://bcg-task.netlify.app/
+
 ## Brief Overview
 The **WebApp** is a modular and scalable React-based application that features an interactive user interface for visualizing consumption data. The application makes use of dynamic charts, a responsive layout, data tables, interactive Map widgets and othe modular components to ensure a smooth and scalable experience. 
 
