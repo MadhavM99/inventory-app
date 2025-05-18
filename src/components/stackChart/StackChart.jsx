@@ -1,10 +1,9 @@
-// StackChart.jsx
 import React, { useState } from "react";
 import ChartHeader from "./ChartHeader";
 import ChartToggles from "./ChartToggles";
 import ChartLegend from "./ChartLegend";
-import ForecastLineChart from "./ForecastLineChart"; 
-import { prepareChartData } from "../ui/utils/prepareChartData";
+import ForecastLineChart from "./ForecastLineChart";
+import { prepareChartData } from "../../utils/prepareChartData";
 
 const StackChart = ({ stack }) => {
   const [showAIForecast, setShowAIForecast] = useState(true);
@@ -16,8 +15,6 @@ const StackChart = ({ stack }) => {
   const dividerQuarter = "Q2-2024";
 
   const chartData = prepareChartData(stack);
-
-
 
   return (
     <div className="bg-gray-800 p-2 border border-gray-800">
@@ -34,15 +31,15 @@ const StackChart = ({ stack }) => {
         </div>
       </div>
       <div className="flex">
-      <ChartToggles
-        showAIForecast={showAIForecast}
-        setShowAIForecast={setShowAIForecast}
-        showFinalForecast={showFinalForecast}
-        setShowFinalForecast={setShowFinalForecast}
-      />
-      <ChartLegend />
+        <ChartToggles
+          showAIForecast={showAIForecast}
+          setShowAIForecast={setShowAIForecast}
+          showFinalForecast={showFinalForecast}
+          setShowFinalForecast={setShowFinalForecast}
+        />
+        <ChartLegend />
       </div>
-      
+
       <ForecastLineChart
         chartData={chartData}
         showAIForecast={showAIForecast}

@@ -1,29 +1,40 @@
 import React from "react";
+import { LayoutPanelTop } from "lucide-react";
+import {
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarTrigger,
+} from "../ui/menubar";
 
-const options = [
-  { label: "Top Horizontal", value: "horizontal-top" },
-  { label: "Bottom Horizontal", value: "horizontal-bottom" },
-  { label: "Left Vertical", value: "vertical-left" },
-  { label: "Right Vertical", value: "vertical-right" },
-];
+const OrientationDropdown = ({ setOrientation }) => {
+  const options = [
+    { label: "Top", value: "top" },
+    { label: "Bottom", value: "bottom" },
+    { label: "Left", value: "left" },
+    { label: "Right", value: "right" },
+  ];
 
-const OrientationDropdown = ({ setOrientation, setDropdownOpen }) => {
   return (
-    <div className="absolute bg-black/80 text-white rounded shadow p-2 text-sm">
-      {options.map((option) => (
-        <div
-          key={option.value}
-          onClick={() => {
-            setOrientation(option.value);
-            setDropdownOpen(false);
-          }}
-          className="cursor-pointer hover:underline"
-        >
-          {option.label}
-        </div>
-      ))}
-    </div>
+    <Menubar className="bg-transparent border-none ">
+      <MenubarMenu>
+        <MenubarTrigger className="bg-transparent text-white border-none">
+          <LayoutPanelTop size={20} />
+        </MenubarTrigger>
+        <MenubarContent>
+          {options.map((option) => (
+            <MenubarItem
+              key={option.value}
+              onClick={() => setOrientation(option.value)}
+            >
+              {option.label}
+            </MenubarItem>
+          ))}
+        </MenubarContent>
+      </MenubarMenu>
+    </Menubar>
   );
 };
 
-export default React.memo(OrientationDropdown);
+export default OrientationDropdown;
