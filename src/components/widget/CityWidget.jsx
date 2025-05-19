@@ -15,7 +15,6 @@ const CityWidget = React.memo(
             padding: "8px 8px",
           }}
         >
-          <div className="absolute inset-0 rounded-xl pointer-events-none"></div>
           <h3 className="text-lg font-semibold mb-2 relative z-10">{city}</h3>
 
           <div className="flex items-center justify-between relative z-10">

@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { useSelectedStack } from "../../../context/SelectedStackContext"; // import your context hook
 
-const useCityData = (onStackSelect) => {
+const useCityData = () => {
   const { city } = useParams();
   const navigate = useNavigate();
+  const { setSelectedStack } = useSelectedStack();
   const [cityData, setCityData] = useState(null);
   const [selectedStackId, setSelectedStackId] = useState(null);
   const [selectedStatus, setSelectedStatus] = useState("BACKLOG");
@@ -19,11 +21,7 @@ const useCityData = (onStackSelect) => {
         if (data?.stacks?.length > 0) {
           const firstStack = data.stacks[0];
           setSelectedStackId(firstStack.stackId);
-
-          // ✅ Only call if it's a real function
-          if (typeof onStackSelect === "function") {
-            onStackSelect(firstStack);
-          }
+          setSelectedStack(firstStack);
         }
       } catch (error) {
         console.error("Error loading city data:", error);
@@ -32,7 +30,7 @@ const useCityData = (onStackSelect) => {
     };
 
     fetchCityData();
-  }, [city, navigate, onStackSelect]);
+  }, [city, navigate, setSelectedStack]);
 
   const filteredStacks =
     cityData?.stacks?.filter((s) => s.stackStatus === selectedStatus) || [];

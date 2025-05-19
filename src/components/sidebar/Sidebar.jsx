@@ -5,23 +5,30 @@ import CollapseToggle from "./CollapseToggle";
 import StatusTabs from "./StatusTabs";
 import StackList from "./StackList";
 import useCityData from "./hooks/useCityData";
+import { useSelectedStack } from "../../context/SelectedStackContext";
 
-const Sidebar = ({ onStackSelect }) => {
+const Sidebar = () => {
   const { city } = useParams();
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const [collapsed, setCollapsed] = useState(false);
-  const {cityData,
+  const {
+    cityData,
     selectedStatus,
     setSelectedStatus,
     selectedStackId,
     setSelectedStackId,
-    filteredStacks,} = useCityData(onStackSelect);
+    filteredStacks,
+  } = useCityData();
+
+  const { setSelectedStack } = useSelectedStack();
 
   return (
     <div
-      className={`bg-[#193D4D] h-full flex flex-col border-r border-gray-800 transition-all duration-300 ${collapsed ? "w-12" : "w-[30vw]"}`}
+      className={`bg-[#193D4D] h-full flex flex-col border-r border-gray-800 transition-all duration-300 ${
+        collapsed ? "w-12" : "w-[30vw]"
+      }`}
     >
-      <SidebarHeader collapsed={collapsed} navigate={navigate}  />
+      <SidebarHeader collapsed={collapsed} navigate={navigate} />
       <CollapseToggle collapsed={collapsed} setCollapsed={setCollapsed} />
 
       {!collapsed && (
@@ -30,14 +37,7 @@ const Sidebar = ({ onStackSelect }) => {
             selectedStatus={selectedStatus}
             setSelectedStatus={setSelectedStatus}
           />
-          <StackList
-            stacks={filteredStacks}
-            selectedStackId={selectedStackId}
-            onStackSelect={(stack) => {
-              setSelectedStackId(stack.stackId);
-              onStackSelect(stack);
-            }}
-          />
+          <StackList stacks={filteredStacks} />
         </>
       )}
     </div>

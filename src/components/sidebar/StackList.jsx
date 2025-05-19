@@ -1,16 +1,17 @@
-// components/sidebar/StackList.jsx
 import React from "react";
 import StackItem from "./StackItem";
+import { useSelectedStack } from "../../context/SelectedStackContext";
 
-const StackList = ({ stacks, selectedStackId, onStackSelect }) => {
+const StackList = ({ stacks }) => {
+  const { selectedStack } = useSelectedStack();
+
   return (
     <div className="flex-1 overflow-y-auto py-2">
       {stacks.map((stack) => (
         <StackItem
           key={stack.stackId}
           stack={stack}
-          isSelected={stack.stackId === selectedStackId}
-          onClick={onStackSelect}
+          isSelected={selectedStack?.stackId === stack.stackId}
         />
       ))}
     </div>
