@@ -1,10 +1,11 @@
-import React from "react";
-import StackData from "../components/dataTable/StackData";
+import React, { lazy, Suspense } from "react";
 import Sidebar from "../components/sidebar/Sidebar";
-import StackChart from "../components/stackChart/StackChart";
 import TopHeader from "../components/landingPage/TopHeader";
 import DetailsHeader from "../components/detailsPage/DetailsHeader";
 import RequirementsBar from "../components/detailsPage/RequirementsBar";
+
+const StackChart = lazy(() => import("../components/stackChart/StackChart"));
+const StackData = lazy(() => import("../components/dataTable/StackData"));
 
 import { useSelectedStack } from "../context/SelectedStackContext";
 
@@ -21,8 +22,12 @@ const DetailsPage = () => {
             <div className="space-y-1">
               <DetailsHeader selectedStack={selectedStack} />
               <RequirementsBar />
-              <StackChart stack={selectedStack} />
-              <StackData stack={selectedStack} />
+              <Suspense fallback={<div>Loading chart...</div>}>
+                <StackChart stack={selectedStack} />
+              </Suspense>{" "}
+              <Suspense fallback={<div>Loading data...</div>}>
+                <StackData stack={selectedStack} />
+              </Suspense>{" "}
             </div>
           ) : (
             <div className="text-gray-400 text-center mt-20">

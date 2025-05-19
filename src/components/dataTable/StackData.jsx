@@ -1,43 +1,34 @@
 import React from "react";
+import { getQuarterValue } from "../../utils/dataHelpers";
 
-const StackData = ({ stack }) => {
-  const allQuarters = [
-    ...stack.aiforecast.quartersDash,
-    ...stack.finalforecast.quartersDash,
-    ...stack.consumption.quartersDash,
+function StackData({ stack }) {
+  const quarters = [
+    "Q2-2022",
+    "Q3-2022",
+    "Q1-2023",
+    "Q2-2023",
+    "Q3-2023",
+    "Q4-2023",
+    "Q1-2024",
+    "Q2-2024",
+    "Q3-2024",
+    "Q4-2024",
+    "Q1-2025",
+    "Q2-2025",
+    "Q3-2025",
+    "Q4-2025",
+    "Q1-2026",
+    "Q2-2026",
   ];
 
-  const uniqueSortedQuarters = Array.from(
-    new Set(allQuarters.map((q) => q.quarter))
-  ).sort((a, b) => {
-    const [qa, ya] = a.split("-");
-    const [qb, yb] = b.split("-");
-    const qOrder = { Q1: 1, Q2: 2, Q3: 3, Q4: 4 };
-    return Number(ya) - Number(yb) || qOrder[qa] - qOrder[qb];
-  });
-
-  const getValue = (data, quarter) => {
-    const item = data.find((q) => q.quarter === quarter);
-    return item ? item.value.toLocaleString() : "";
-  };
-
   const rows = [
-    {
-      label: "DATA 1",
-      data: stack.aiforecast.quartersDash,
-    },
-    {
-      label: "DATA 2",
-      data: stack.finalforecast.quartersDash,
-    },
-    {
-      label: "DATA 3",
-      data: stack.consumption.quartersDash,
-    },
+    { label: "DATA 1", data: stack.aiforecast.quartersDash },
+    { label: "DATA 2", data: stack.finalforecast.quartersDash },
+    { label: "DATA 3", data: stack.consumption.quartersDash },
   ];
 
   return (
-    <div style={{paddingLeft : "15px" }}>
+    <div style={{ paddingLeft: "15px" }}>
       <table
         style={{
           width: "100%",
@@ -49,7 +40,7 @@ const StackData = ({ stack }) => {
         }}
       >
         <tbody>
-          {rows.map((row, rowIdx) => (
+          {rows.map((row) => (
             <tr key={row.label}>
               <td
                 style={{
@@ -61,9 +52,9 @@ const StackData = ({ stack }) => {
               >
                 {row.label}
               </td>
-              {uniqueSortedQuarters.map((quarter, colIdx) => (
+              {quarters.map((quarter) => (
                 <td
-                  key={colIdx}
+                  key={quarter}
                   style={{
                     textAlign: "center",
                     minWidth: 40,
@@ -73,7 +64,7 @@ const StackData = ({ stack }) => {
                     whiteSpace: "nowrap",
                   }}
                 >
-                  {getValue(row.data, quarter)}
+                  {getQuarterValue(row.data, quarter)}
                 </td>
               ))}
             </tr>
@@ -82,6 +73,6 @@ const StackData = ({ stack }) => {
       </table>
     </div>
   );
-};
+}
 
 export default StackData;
